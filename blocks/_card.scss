@@ -1,0 +1,394 @@
+.card {
+   margin: 40px 0px 80px 0px;
+
+   &__inner {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      @media (max-width: 650px) {
+         flex-direction: column;
+         row-gap: 30px;
+      }
+   }
+
+   &__preview {
+      width: 33%;
+      @media (max-width: 1000px) {
+         width: 40%;
+      }
+      @media (max-width: 850px) {
+         width: 49%;
+      }
+      @media (max-width: 650px) {
+         width: 100%;
+      }
+   }
+
+   &__preview-big {
+      display: grid;
+      grid-template: auto / 1fr;
+      height: 379px;
+      align-items: end;
+      position: relative;
+      margin-bottom: 10px;
+      &:after {
+         content: "";
+         width: 90%;
+         height: 90%;
+         position: absolute;
+         top: 0;
+         right: 0;
+         z-index: -1;
+         background-color: $graygreen;
+         border-radius: 54px;
+         border: 2px solid $dark;
+      }
+      @media (max-width: 575px) {
+         height: 305px;
+      }
+   }
+
+   &__preview-big-item {
+      display: block;
+      width: 90%;
+      height: 342px;
+      grid-area: 1/1/2/2;
+      z-index: 1;
+      border: 2px solid $dark;
+      opacity: 0;
+      transition: all 0.2s ease;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      &.activebigitem {
+         z-index: 2;
+         opacity: 1;
+      }
+      @media (max-width: 575px) {
+         height: 280px;
+      }
+   }
+
+   &__preview-small {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__preview-small-items {
+      display: flex;
+      justify-content: space-between;
+      width: 84%;
+   }
+
+   &__preview-small-item {
+      cursor: pointer;
+      width: 24%;
+      height: 80px;
+      border: 2px solid $dark;
+      transition: all 0.2s ease;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      &.activesmallitem {
+         border-color: $green;
+      }
+      @media (max-width: 375px) {
+         height: 60px;
+      }
+   }
+
+   &__preview-small-btn {
+      cursor: pointer;
+      max-width: 45px;
+      width: 12%;
+      height: 20px;
+      background: url("../img/card/Line.svg") center right no-repeat;
+   }
+
+   &__info {
+      width: 64%;
+      @media (max-width: 1000px) {
+         width: 58%;
+      }
+      @media (max-width: 850px) {
+         width: 49%;
+      }
+      @media (max-width: 650px) {
+         width: 100%;
+      }
+   }
+
+   &__title {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 120%;
+      color: $dark;
+      margin-bottom: 20px;
+      @media (max-width: 575px) {
+         font-size: 28px;
+      }
+   }
+
+   &__desc {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 130%;
+      color: $dark;
+      margin-bottom: 20px;
+   }
+
+   &__size {
+      display: flex;
+      margin-bottom: 20px;
+   }
+
+   &__size-item {
+      margin-right: 10px;
+      position: relative;
+      input {
+         cursor: pointer;
+         margin: 0;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         z-index: 2;
+         &:checked + label {
+            color: $dark;
+            border: 2px solid $dark;
+         }
+      }
+      label {
+         display: inline-block;
+         padding: 3px 5px;
+
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 130%;
+         color: $green;
+         border: 2px solid $green;
+         transition: all 0.2s ease;
+      }
+   }
+
+   &__tabs {
+      display: flex;
+      margin: 10px;
+   }
+
+   &__tabs-btn {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 130%;
+      color: $green;
+      margin-right: 30px;
+      &.activeinfotab {
+         color: $dark;
+      }
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+
+   &__tabs-contents {
+      max-height: 140px;
+      overflow: hidden;
+      border: 2px solid $dark;
+      display: grid;
+      grid-template: auto / 1fr;
+      padding: 30px;
+      transition: all 0.2s ease-in;
+      margin-bottom: 20px;
+      &:hover {
+         transition: all 0.2s ease-in;
+         max-height: 1000px;
+         .card__tabs-content {
+            max-height: 1000px;
+         }
+      }
+   }
+
+   &__tabs-content {
+      background-color: #fff;
+      grid-area: 1/1/2/2;
+      max-height: 75px;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 0.2s ease-in;
+      p {
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 120%;
+         color: $dark;
+         margin-bottom: 10px;
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+      &.activeinfocnt {
+         z-index: 2;
+      }
+   }
+   &__sum {
+      margin-bottom: 30px;
+      .card__price-text {
+         display: none;
+         @media (max-width: 650px) {
+            display: inline-block;
+            align-self: flex-end;
+         }
+      }
+      @media (max-width: 650px) {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+   &__sum-wrapper {
+      display: flex;
+      align-items: center;
+   }
+
+   &__minus {
+      cursor: pointer;
+      width: 52px;
+      height: 32px;
+      border: 2px solid $greenB;
+      border-radius: 60%;
+      position: relative;
+      transition: background-color 0.2s ease;
+      &:before {
+         content: "";
+
+         background-color: $greenB;
+         position: absolute;
+         transition: background-color 0.2s ease;
+      }
+      &:before {
+         width: 9px;
+         height: 1px;
+         top: 50%;
+         left: 50%;
+         transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:hover {
+         background-color: $greenB;
+         &:before {
+            background-color: $yellow;
+         }
+      }
+   }
+   &__plus {
+      cursor: pointer;
+      width: 52px;
+      height: 32px;
+      border: 2px solid $greenB;
+      border-radius: 60%;
+      position: relative;
+      transition: background-color 0.2s ease;
+      &:before,
+      &:after {
+         content: "";
+
+         background-color: $greenB;
+         position: absolute;
+         transition: background-color 0.2s ease;
+      }
+      &:before {
+         width: 9px;
+         height: 1px;
+         top: 50%;
+         left: 50%;
+         transform: translate3d(-50%, -50%, 0);
+      }
+      &:after {
+         width: 1px;
+         height: 9px;
+         top: 50%;
+         left: 50%;
+         transform: translate3d(-50%, -50%, 0);
+      }
+      &:hover {
+         background-color: $greenB;
+         &:before,
+         &:after {
+            background-color: $yellow;
+         }
+      }
+   }
+
+   &__sum-sum {
+      font-family: "Raleway", sans-serif;
+
+      font-variant-numeric: lining-nums;
+      font-feature-settings: "lnum";
+      -moz-font-feature-settings: "lnum=1";
+      -ms-font-feature-settings: "lnum";
+      -webkit-font-feature-settings: "lnum";
+      -o-font-feature-settings: "lnum";
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 130%;
+      color: $dark;
+      display: inline-block;
+      margin: 0 15px;
+      text-align: center;
+      max-width: 35px;
+      @media (max-width: 375px) {
+         margin: 0 3px;
+      }
+   }
+
+   &__price {
+      display: flex;
+      align-items: center;
+      @media (max-width: 767px) {
+         justify-content: space-between;
+      }
+   }
+
+   &__price-text {
+      font-family: Raleway;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 120%;
+      color: $dark;
+      @media (max-width: 650px) {
+         display: none;
+      }
+   }
+
+   &__btn-order {
+      margin-left: 100px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      color: $dark;
+      padding: 12px 41px;
+      border: 2px solid $dark;
+      background: linear-gradient(135deg, rgba(175, 192, 115, 1) 0%, rgba(255, 222, 107, 1) 100%);
+      &:hover {
+         background: $yellow;
+      }
+      @media (max-width: 767px) {
+         margin-left: 0;
+      }
+      @media (max-width: 650px) {
+         width: 100%;
+         margin-left: 0;
+         text-align: center;
+      }
+   }
+}

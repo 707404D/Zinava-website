@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zinava</title>
+  </head>
+
+  <body>
+    <div class="user__modal">
+      <div class="container">
+        <div class="user__modal-inner">
+          <div class="user__modal-wrapper">
+            <span class="user__modal-title">
+              Войти или зарегистрироваться
+            </span>
+            <input
+              placeholder="Номер"
+              value=""
+              class="user__phone mask__phone"
+            />
+            <input placeholder="код" value="" type="text" class="user__code" />
+            <button
+              type="button"
+              class="user__modal-btn user__modal-btn-getcode"
+            >
+              получить код
+            </button>
+            <a class="user__modal-codeagain" href="">отправить под повторно</a>
+            <button type="button" class="user__modal-btn user__modal-btn-sign">
+              войти
+            </button>
+            <label class="user__modal-check">
+              <input type="checkbox" />
+              <span>получать информацию о скидках</span>
+            </label>
+            <button type="button" class="user__modal-close">
+              <span class="user__modal-close-btn"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__links">
+            <a href="#blog" class="header__link">О бренде</a>
+            <a href="catalog.html" class="header__link">Каталог</a>
+            <a href="#stock" class="header__link">Акции</a>
+          </div>
+          <div class="header__logo">
+            <img src="./img/header/logo.svg" alt="" />
+          </div>
+          <div class="header__links">
+            <a href="#blog" class="header__link">Блог</a>
+            <a href="contacts.html" class="header__link">Контакты</a>
+          </div>
+          <div class="header__icons">
+            <a href="cart.html" class="header__icon header__basket"></a>
+            <a href="cart.html" class="header__icon header__wishes">
+              <span class="header__wishes-count">11</span>
+            </a>
+            <a href="" class="header__icon header__user"></a>
+            <button type="button" class="header__burger">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+
+          <div class="header__icons header__icons-mobile">
+            <a
+              href=""
+              class="header__icon header__user header__icon-mobile"
+            ></a>
+            <button type="button" class="header__burger header__burger-small">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__modal">
+        <div class="header__modal-wrapper">
+          <div class="header__modal-links">
+            <a href="#blog" class="header__modal-link"> О бренде </a>
+            <a href="catalog.html" class="header__modal-link"> Каталог </a>
+            <a href="#stock" class="header__modal-link"> Акции </a>
+            <a href="#blog" class="header__modal-link"> Блог </a>
+            <a href="contacts.html" class="header__modal-link"> Контакты </a>
+          </div>
+
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+          <button type="button" class="header__modal-close">
+            <span class="header__modal-close-btn"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main main-index">
+      <section class="preview">
+        <div class="container">
+          <div class="preview__wrapper">
+            <div class="preview__row">
+              <div class="preview__img preview__img--img-1">
+                <img src="./img/preview/1.jpg" alt="" />
+              </div>
+              <div class="preview__text">
+                <h1 class="preview__title">
+                  <span class="preview__title-nostroke">zivana</span>
+                  <span class="preview__title-stroke">zivana</span>
+                </h1>
+                <h2 class="preview__subtitle">
+                  Белорусская мастерская натуральной косметики
+                </h2>
+              </div>
+            </div>
+            <div class="preview__row">
+              <div class="preview__img preview__img--img-2">
+                <img src="./img/preview/2.jpg" alt="" />
+                <a href="catalog.html" class="preview__btn">
+                  открыть каталог
+                </a>
+              </div>
+              <div class="preview__img preview__img--img-3">
+                <img src="img/preview/3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <marquee
+          class="preview__line"
+          behavior="scroll"
+          loop="infinity"
+          truespeed="50"
+          scrollamount="5"
+          scrolldelay="10"
+          onmouseover="this.stop()"
+          onmouseout="this.start()"
+        >
+          <div class="preview__line-text">
+            натуральная косметика<span>zivana</span>натуральная косметика
+            <span>zivana</span>
+            натуральная косметика <span>zivana</span>натуральная косметика
+            <span>zivana</span>натуральная косметика
+            <span>zivana</span>натуральная косметика<span>zivana</span>
+          </div>
+        </marquee>
+      </section>
+      <section class="popular">
+        <div class="container">
+          <h2 class="popular__title">Популярное</h2>
+          <div class="popular__wrapper">
+            <div class="popular__item popular__item--item-1">
+              <div class="popular__item-wrapper">
+                <a href="card.html" class="popular__item-img">
+                  <img src="./img/popular/1.png" alt="" />
+                </a>
+                <div class="popular__item-info">
+                  <div class="popular__item-row">
+                    <div class="popular__item-name">
+                      Сухая пенка для умывания
+                    </div>
+
+                    <div class="popular__item-select" data-state="">
+                      <div class="popular__item-select-default" data-default="">
+                        100 г
+                      </div>
+                      <div class="popular__item-select-content">
+                        <input
+                          id="popularItem1"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem"
+                          checked
+                        />
+                        <label
+                          for="popularItem1"
+                          class="popular__item-select-label"
+                          >100 г</label
+                        >
+                        <input
+                          id="popularItem2"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem2"
+                          class="popular__item-select-label"
+                          >200 г</label
+                        >
+
+                        <input
+                          id="popularItem3"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem3"
+                          class="popular__item-select-label"
+                          >300 г</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__item-row">
+                    <div class="popular__item-infoprices">
+                      <div class="popular__item-price">18 byn</div>
+                      <button type="button" class="popular__item-btn"></button>
+                    </div>
+
+                    <button type="button" class="popular__item-wish"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__item popular__item--item-2">
+              <div class="popular__item-wrapper">
+                <a href="card.html" class="popular__item-img">
+                  <img src="./img/popular/2.jpg" alt="" />
+                </a>
+                <div class="popular__item-info">
+                  <div class="popular__item-row">
+                    <div class="popular__item-name">Гидролат Таволги</div>
+                    <div class="popular__item-select" data-state="">
+                      <div class="popular__item-select-default" data-default="">
+                        30 мл
+                      </div>
+                      <div class="popular__item-select-content">
+                        <input
+                          id="popularItem4"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem2"
+                          checked
+                        />
+                        <label
+                          for="popularItem4"
+                          class="popular__item-select-label"
+                          >50 мл</label
+                        >
+                        <input
+                          id="popularItem5"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem2"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem5"
+                          class="popular__item-select-label"
+                          >100 мл</label
+                        >
+
+                        <input
+                          id="popularItem6"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem2"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem6"
+                          class="popular__item-select-label"
+                          >150 мл</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__item-row">
+                    <div class="popular__item-infoprices">
+                      <div class="popular__item-price">15 byn</div>
+                      <button type="button" class="popular__item-btn"></button>
+                    </div>
+
+                    <button type="button" class="popular__item-wish"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__item popular__item--item-3">
+              <div class="popular__item-wrapper">
+                <a href="card.html" class="popular__item-img">
+                  <img src="./img/popular/3.png" alt="" />
+                </a>
+                <div class="popular__item-info">
+                  <div class="popular__item-row">
+                    <div class="popular__item-name">Твердый шампунь</div>
+                    <div class="popular__item-select" data-state="">
+                      <div class="popular__item-select-default" data-default="">
+                        80 г
+                      </div>
+                      <div class="popular__item-select-content">
+                        <input
+                          id="popularItem7"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem3"
+                          checked
+                        />
+                        <label
+                          for="popularItem7"
+                          class="popular__item-select-label"
+                          >80 г</label
+                        >
+                        <input
+                          id="popularItem8"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem3"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem8"
+                          class="popular__item-select-label"
+                          >100 г</label
+                        >
+
+                        <input
+                          id="popularItem9"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem3"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem9"
+                          class="popular__item-select-label"
+                          >150 г</label
+                        >
+                        <input
+                          id="popularItem10"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem3"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem10"
+                          class="popular__item-select-label"
+                          >200 г</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__item-row">
+                    <div class="popular__item-infoprices">
+                      <div class="popular__item-price">19 byn</div>
+                      <button type="button" class="popular__item-btn"></button>
+                    </div>
+
+                    <button type="button" class="popular__item-wish"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__item popular__item--item-4">
+              <div class="popular__item-wrapper">
+                <a href="card.html" class="popular__item-img">
+                  <img src="./img/popular/4.jpg" alt="" />
+                </a>
+                <div class="popular__item-info">
+                  <div class="popular__item-row">
+                    <div class="popular__item-name">Пенка для умывания</div>
+                    <div class="popular__item-select" data-state="">
+                      <div class="popular__item-select-default" data-default="">
+                        80 мл
+                      </div>
+                      <div class="popular__item-select-content">
+                        <input
+                          id="popularItem11"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem4"
+                          checked
+                        />
+                        <label
+                          for="popularItem11"
+                          class="popular__item-select-label"
+                          >80 мл</label
+                        >
+                        <input
+                          id="popularItem12"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem4"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem12"
+                          class="popular__item-select-label"
+                          >100 мл</label
+                        >
+
+                        <input
+                          id="popularItem13"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem4"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem13"
+                          class="popular__item-select-label"
+                          >150 мл</label
+                        >
+                        <input
+                          id="popularItem14"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem4"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem14"
+                          class="popular__item-select-label"
+                          >200 мл</label
+                        >
+                        <input
+                          id="popularItem15"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="popularItem4"
+                          data-price=""
+                        />
+                        <label
+                          for="popularItem15"
+                          class="popular__item-select-label"
+                          >250 мл</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__item-row">
+                    <div class="popular__item-infoprices">
+                      <div class="popular__item-price">20 byn</div>
+                      <button type="button" class="popular__item-btn"></button>
+                    </div>
+
+                    <button type="button" class="popular__item-wish"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__item popular__item--item-5">
+              <span class="popular__item-text">Выгодно!</span>
+              <div class="popular__item-inner">
+                <div class="popular__item-wrapper popular__item--item-6">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/5.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Убтан (для умывания)</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          80 мл
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem16"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem5"
+                            checked
+                          />
+                          <label
+                            for="popularItem16"
+                            class="popular__item-select-label"
+                            >80 мл</label
+                          >
+                          <input
+                            id="popularItem17"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem5"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem17"
+                            class="popular__item-select-label"
+                            >100 мл</label
+                          >
+
+                          <input
+                            id="popularItem18"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem5"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem18"
+                            class="popular__item-select-label"
+                            >150 мл</label
+                          >
+                          <input
+                            id="popularItem19"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem5"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem19"
+                            class="popular__item-select-label"
+                            >200 мл</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">15 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__item-wrapper popular__item--item-7">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/6.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Тоник Belle skin</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          80 мл
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem20"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem6"
+                            checked
+                          />
+                          <label
+                            for="popularItem20"
+                            class="popular__item-select-label"
+                            >80 мл</label
+                          >
+                          <input
+                            id="popularItem21"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem6"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem21"
+                            class="popular__item-select-label"
+                            >100 мл</label
+                          >
+
+                          <input
+                            id="popularItem22"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem6"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem22"
+                            class="popular__item-select-label"
+                            >150 мл</label
+                          >
+                          <input
+                            id="popularItem23"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem6"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem23"
+                            class="popular__item-select-label"
+                            >200 мл</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">11 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__links">
+            <a href="catalog.html" class="popular__link">открыть каталог</a>
+          </div>
+        </div>
+      </section>
+      <section id="stock" class="stock">
+        <div class="container">
+          <div class="stock__wrapper">
+            <h2 class="stock__title">Акции</h2>
+            <div class="stock__inner">
+              <div class="stock__main">
+                <div class="stock__main-img">
+                  <img src="./img/stock/1.png" alt="" />
+                </div>
+                <div class="stock__main-text">
+                  <h3 class="stock__main-title">
+                    <span class="stock__main-title-nostroke">
+                      Черный понедельник!
+                    </span>
+                    <span class="stock__main-title-stroke">
+                      Черный понедельник!
+                    </span>
+                  </h3>
+                  <p class="stock__main-info">
+                    Каждый понедельник среди подписчиков инстаграмма
+                    мы разыгрываем один из любимых продуктов наших клиентов.
+                    Для участия подпишитесь на нас в инстаграмм:)
+                  </p>
+                </div>
+              </div>
+              <div class="stock__qr">
+                <img src="./img/stock/qr.png" alt="" />
+              </div>
+              <div class="stock__discounts">
+                <h4 class="stock__discounts-title">
+                  <span class="stock__discounts-title-nostroke"
+                    >Приятные скидки для именинников</span
+                  >
+                  <span class="stock__discounts-title-stroke"
+                    >Приятные скидки для именинников</span
+                  >
+                </h4>
+                <p class="stock__discounts-info">
+                  будем информировать вас перед вашим праздником
+                </p>
+                <form class="stock__discounts-form">
+                  <input
+                    class="stock__discounts-input"
+                    placeholder="введите почту"
+                    type="text"
+                  />
+                  <button type="submit" class="stock__discounts-btn">
+                    <div class="stock__discounts-btn-item"></div>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="blog__wrapper">
+            <div class="blog__title">
+              <h2 class="blog__title-text">Блог</h2>
+              <a href="" class="blog__title-link"> Смотреть все </a>
+            </div>
+
+            <div class="blog__inner">
+              <div class="blog__item blog__item-1">
+                <div class="blog__item-img">
+                  <img src="./img/blog/1.png" alt="" />
+                </div>
+                <a href="" class="blog__item-link">
+                  <span>Как правильно выбрать шампунь для волос?</span>
+                </a>
+                <div class="blog__item-text">
+                  Внешний вид флакона или запах продукта не должен быть
+                  единственно..
+                </div>
+              </div>
+              <div class="blog__item blog__item-2">
+                <a href="" class="blog__item-link">
+                  <span> Стекло или пластик? </span>
+                </a>
+                <div class="blog__item-text">
+                  Этот мучительный выбор... <br />
+                  Как известно, косметическая промышленность - это...
+                </div>
+                <div class="blog__item-img">
+                  <img src="./img/blog/2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="blog__item blog__item-3">
+                <div class="blog__item-img">
+                  <img src="./img/blog/3.png" alt="" />
+                </div>
+                <a href="" class="blog__item-link">
+                  <span>Почему Зивана?</span>
+                </a>
+                <div class="blog__item-text">
+                  Зивана (в других источниках Живана, Жива, Сива, Дзива) -
+                  древнеславянская богиня..
+                </div>
+              </div>
+            </div>
+
+            <div class="blog__slider swiper">
+              <div class="blog__inner swiper-wrapper">
+                <div class="blog__item blog__item-1 swiper-slide">
+                  <div class="blog__item-img">
+                    <img src="./img/blog/1.png" alt="" />
+                  </div>
+                  <a href="" class="blog__item-link">
+                    <span>Как правильно выбрать шампунь для волос?</span>
+                  </a>
+                  <div class="blog__item-text">
+                    Внешний вид флакона или запах продукта не должен быть
+                    единственно..
+                  </div>
+                </div>
+                <div class="blog__item blog__item-2 swiper-slide">
+                  <a href="" class="blog__item-link">
+                    <span> Стекло или пластик? </span>
+                  </a>
+                  <div class="blog__item-text">
+                    Этот мучительный выбор... <br />
+                    Как известно, косметическая промышленность - это...
+                  </div>
+                  <div class="blog__item-img">
+                    <img src="./img/blog/2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="blog__item blog__item-3 swiper-slide">
+                  <div class="blog__item-img">
+                    <img src="./img/blog/3.png" alt="" />
+                  </div>
+                  <a href="" class="blog__item-link">
+                    <span>Почему Зивана?</span>
+                  </a>
+                  <div class="blog__item-text">
+                    Зивана (в других источниках Живана, Жива, Сива, Дзива) -
+                    древнеславянская богиня..
+                  </div>
+                </div>
+              </div>
+              <div class="blog__slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="footer__left-inner">
+                <div class="footer__title">
+                  <h2 class="footer__title-text">
+                    <span class="footer__title-text-nostroke">ZINAVA</span>
+                    <span class="footer__title-text-stroke">ZINAVA</span>
+                  </h2>
+                  <a href="" class="footer__instagramm">
+                    <img src="./img/footer/instagram.svg" alt="" />
+                  </a>
+                </div>
+                <div class="footer__links">
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">О нас</h3>
+                    <a href="#blog" class="footer__link">О бренде </a>
+                    <a href="contacts.html" class="footer__link"
+                      >Вопрос-ответ</a
+                    >
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Каталог</h3>
+                    <a href="catalog.html" class="footer__link">Для лица </a>
+                    <a href="catalog.html" class="footer__link">Для волос</a>
+                    <a href="catalog.html" class="footer__link">Для тела</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Покупателю</h3>
+                    <a href="cart.html" class="footer__link"
+                      >Способы доставки</a
+                    >
+                    <a href="#blog" class="footer__link">Блог</a>
+                    <a href="cart.html" class="footer__link">Обмен и возврат</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Связь</h3>
+                    <a href="" class="footer__link">+37529 284-89-56 </a>
+                    <a href="" class="footer__link">zivana.bel@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__right-img">
+                <img src="./img/footer/1.jpg" alt="" />
+              </div>
+              <div class="footer__right-text">
+                <h4 class="footer__right-title">
+                  <span class="footer__right-text-nostroke">
+                    Узнавай про акции первой
+                  </span>
+                  <span class="footer__right-text-stroke">
+                    Узнавай про акции первой
+                  </span>
+                </h4>
+                <form class="footer__right-form">
+                  <input
+                    placeholder="введите почту"
+                    type="text"
+                    class="footer__right-input"
+                  />
+                  <button type="submit" class="footer__right-btn">
+                    <span class="footer__right-btn-item"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/headerLinks.js"></script>
+  <script src="./js/userModal.js"></script>
+  <script src="./js/popularItemsSelects.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swiperInit.js"></script>
+  <script src="./js/app.js"></script>
+</html>

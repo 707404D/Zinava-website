@@ -1,0 +1,137 @@
+.contacts {
+   margin: 40px 0 220px 0;
+   @media (max-width: 767px) {
+      margin-bottom: 60px;
+   }
+   @media (max-width: 575px) {
+      .container {
+         padding: 0;
+      }
+   }
+
+   &__wrapper {
+      .nav {
+         padding: 0 15px;
+      }
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 110px;
+      @media (max-width: 1350px) {
+         padding-left: 0;
+      }
+   }
+
+   &__left {
+      width: 60%;
+      border: 2px solid $dark;
+      background-color: $whitegreen;
+      padding: 30px;
+      position: relative;
+      &:after {
+         content: "";
+         width: 80%;
+         height: 90%;
+         background-color: $yellow;
+         border: 2px solid $dark;
+         position: absolute;
+         top: 0;
+         right: -10px;
+         z-index: -1;
+         transform: rotate(-10deg);
+         @media (max-width: 575px) {
+            display: none;
+         }
+      }
+      @media (max-width: 989px) {
+         width: 100%;
+         &:after {
+            width: 100%;
+            right: 0;
+         }
+      }
+      @media (max-width: 575px) {
+         padding: 30px 20px;
+      }
+   }
+
+   &__text {
+      margin-bottom: 20px;
+      p {
+         font-size: 32px;
+         font-weight: 500;
+         line-height: 120%;
+         color: $dark;
+         margin-bottom: 20px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+         @media (max-width: 575px) {
+            font-size: 28px;
+            word-break: break-all;
+         }
+      }
+   }
+
+   &__subtext {
+      margin-bottom: 20px;
+      p {
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 120%;
+         color: $dark;
+      }
+   }
+
+   &__btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      color: $dark;
+      border: 2px solid $dark;
+      padding: 12px 31px;
+      background: linear-gradient(135deg, rgba(175, 192, 115, 1) 0%, rgba(255, 222, 107, 1) 100%);
+      &:hover {
+         background: $yellow;
+      }
+      @media (max-width: 575px) {
+         width: 100%;
+         text-align: center;
+      }
+   }
+
+   &__right {
+      width: 28%;
+      position: relative;
+      &:after {
+         content: "";
+         width: 100%;
+         height: 95%;
+         background-color: $green;
+         border: 2px solid $dark;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: -1;
+      }
+      @media (max-width: 989px) {
+         display: none;
+      }
+   }
+
+   &__img {
+      height: 452px;
+      border: 2px solid $dark;
+      transform: rotate(12deg) translateX(-35px);
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}

@@ -1,0 +1,38 @@
+.nav {
+   display: flex;
+   align-items: center;
+   margin-bottom: 50px;
+
+   @media (max-width: 767px) {
+      flex-wrap: wrap;
+      row-gap: 10px;
+   }
+
+   &__link {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 120%;
+      color: $dark;
+      text-decoration: none;
+      margin-right: 35px;
+      position: relative;
+      &:after {
+         content: "/";
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 120%;
+         color: $dark;
+         position: absolute;
+         top: 50%;
+         right: -22px;
+         transform: translateY(-50%);
+      }
+      &:last-child {
+         color: $green;
+         margin-right: 0;
+         &:after {
+            opacity: 0;
+         }
+      }
+   }
+}

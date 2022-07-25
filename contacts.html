@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zinava</title>
+  </head>
+
+  <body>
+    <div class="user__modal">
+      <div class="container">
+        <div class="user__modal-inner">
+          <div class="user__modal-wrapper">
+            <span class="user__modal-title">
+              Войти или зарегистрироваться
+            </span>
+            <input
+              placeholder="Номер"
+              value=""
+              class="user__phone mask__phone"
+            />
+            <input placeholder="код" value="" type="text" class="user__code" />
+            <button
+              type="button"
+              class="user__modal-btn user__modal-btn-getcode"
+            >
+              получить код
+            </button>
+            <a class="user__modal-codeagain" href="">отправить под повторно</a>
+            <button type="button" class="user__modal-btn user__modal-btn-sign">
+              войти
+            </button>
+            <label class="user__modal-check">
+              <input type="checkbox" />
+              <span>получать информацию о скидках</span>
+            </label>
+            <button type="button" class="user__modal-close">
+              <span class="user__modal-close-btn"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__links">
+            <a href="index.html#blog" class="header__link">О бренде</a>
+            <a href="catalog.html" class="header__link">Каталог</a>
+            <a href="index.html#stock" class="header__link">Акции</a>
+          </div>
+          <div class="header__logo">
+            <img src="./img/header/logo.svg" alt="" />
+          </div>
+          <div class="header__links">
+            <a href="index.html#blog" class="header__link">Блог</a>
+            <a href="contacts.html" class="header__link">Контакты</a>
+          </div>
+          <div class="header__icons">
+            <a href="cart.html" class="header__icon header__basket"></a>
+            <a href="cart.html" class="header__icon header__wishes">
+              <span class="header__wishes-count">11</span>
+            </a>
+            <a href="" class="header__icon header__user"></a>
+            <button type="button" class="header__burger">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+
+          <div class="header__icons header__icons-mobile">
+            <a
+              href=""
+              class="header__icon header__user header__icon-mobile"
+            ></a>
+            <button type="button" class="header__burger header__burger-small">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__modal">
+        <div class="header__modal-wrapper">
+          <div class="header__modal-links">
+            <a href="index.html#blog" class="header__modal-link"> О бренде </a>
+            <a href="catalog.html" class="header__modal-link"> Каталог </a>
+            <a href="index.html#stock" class="header__modal-link"> Акции </a>
+            <a href="index.html#blog" class="header__modal-link"> Блог </a>
+            <a href="contacts.html" class="header__modal-link"> Контакты </a>
+          </div>
+
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+          <button type="button" class="header__modal-close">
+            <span class="header__modal-close-btn"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <nav class="nav">
+              <a href="index.html" class="nav__link"> Главная </a>
+              <a href="contacts.html" class="nav__link"> Контакты </a>
+            </nav>
+            <div class="contacts__inner">
+              <div class="contacts__left">
+                <div class="contacts__text">
+                  <p>
+                    Для связи с нами вы можете воспользоваться следующими
+                    способами
+                  </p>
+                  <p>+37529 867-09-81</p>
+                  <p>zivana.bel@gmail.com</p>
+                </div>
+                <div class="contacts__subtext">
+                  <p>
+                    для заказов по территории Республики Беларусь, а также для
+                    сотрудничества
+                  </p>
+                </div>
+                <a href="instagram.com" class="contacts__btn"
+                  >пишите в инстаграмм</a
+                >
+              </div>
+              <div class="contacts__right">
+                <div class="contacts__img">
+                  <img src="./img/contacts/1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="footer__left-inner">
+                <div class="footer__title">
+                  <h2 class="footer__title-text">
+                    <span class="footer__title-text-nostroke">ZINAVA</span>
+                    <span class="footer__title-text-stroke">ZINAVA</span>
+                  </h2>
+                  <a href="" class="footer__instagramm">
+                    <img src="./img/footer/instagram.svg" alt="" />
+                  </a>
+                </div>
+                <div class="footer__links">
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">О нас</h3>
+                    <a href="index.html#blog" class="footer__link">О бренде </a>
+                    <a href="contacts.html" class="footer__link"
+                      >Вопрос-ответ</a
+                    >
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Каталог</h3>
+                    <a href="catalog.html" class="footer__link">Для лица </a>
+                    <a href="catalog.html" class="footer__link">Для волос</a>
+                    <a href="catalog.html" class="footer__link">Для тела</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Покупателю</h3>
+                    <a href="cart.html" class="footer__link"
+                      >Способы доставки</a
+                    >
+                    <a href="index.html#blog" class="footer__link">Блог</a>
+                    <a href="cart.html" class="footer__link">Обмен и возврат</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Связь</h3>
+                    <a href="" class="footer__link">+37529 284-89-56 </a>
+                    <a href="" class="footer__link">zivana.bel@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__right-img">
+                <img src="./img/footer/1.jpg" alt="" />
+              </div>
+              <div class="footer__right-text">
+                <h4 class="footer__right-title">
+                  <span class="footer__right-text-nostroke">
+                    Узнавай про акции первой
+                  </span>
+                  <span class="footer__right-text-stroke">
+                    Узнавай про акции первой
+                  </span>
+                </h4>
+                <form class="footer__right-form">
+                  <input
+                    placeholder="введите почту"
+                    type="text"
+                    class="footer__right-input"
+                  />
+                  <button type="submit" class="footer__right-btn">
+                    <span class="footer__right-btn-item"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/headerLinks.js"></script>
+  <script src="./js/userModal.js"></script>
+  <script src="./js/app.js"></script>
+</html>

@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css" /> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Zinava</title>
+  </head>
+
+  <body>
+    <div class="user__modal">
+      <div class="container">
+        <div class="user__modal-inner">
+          <div class="user__modal-wrapper">
+            <span class="user__modal-title">
+              Войти или зарегистрироваться
+            </span>
+            <input
+              placeholder="Номер"
+              value=""
+              class="user__phone mask__phone"
+            />
+            <input placeholder="код" value="" type="text" class="user__code" />
+            <button
+              type="button"
+              class="user__modal-btn user__modal-btn-getcode"
+            >
+              получить код
+            </button>
+            <a class="user__modal-codeagain" href="">отправить под повторно</a>
+            <button type="button" class="user__modal-btn user__modal-btn-sign">
+              войти
+            </button>
+            <label class="user__modal-check">
+              <input type="checkbox" />
+              <span>получать информацию о скидках</span>
+            </label>
+            <button type="button" class="user__modal-close">
+              <span class="user__modal-close-btn"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__links">
+            <a href="index.html#blog" class="header__link">О бренде</a>
+            <a href="catalog.html" class="header__link">Каталог</a>
+            <a href="index.html#stock" class="header__link">Акции</a>
+          </div>
+          <div class="header__logo">
+            <img src="./img/header/logo.svg" alt="" />
+          </div>
+          <div class="header__links">
+            <a href="index.html#blog" class="header__link">Блог</a>
+            <a href="contacts.html" class="header__link">Контакты</a>
+          </div>
+          <div class="header__icons">
+            <a href="cart.html" class="header__icon header__basket"></a>
+            <a href="cart.html" class="header__icon header__wishes">
+              <span class="header__wishes-count">11</span>
+            </a>
+            <a href="" class="header__icon header__user"></a>
+            <button type="button" class="header__burger">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+
+          <div class="header__icons header__icons-mobile">
+            <a
+              href=""
+              class="header__icon header__user header__icon-mobile"
+            ></a>
+            <button type="button" class="header__burger header__burger-small">
+              <span class="header__burger-item"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__modal">
+        <div class="header__modal-wrapper">
+          <div class="header__modal-links">
+            <a href="index.html#blog" class="header__modal-link"> О бренде </a>
+            <a href="catalog.html" class="header__modal-link"> Каталог </a>
+            <a href="index.html#stock" class="header__modal-link"> Акции </a>
+            <a href="index.html#blog" class="header__modal-link"> Блог </a>
+            <a href="contacts.html" class="header__modal-link"> Контакты </a>
+          </div>
+
+          <div class="header__search">
+            <input class="header__input" placeholder="найти..." type="text" />
+            <a href="" class="header__search-btn"></a>
+          </div>
+          <button type="button" class="header__modal-close">
+            <span class="header__modal-close-btn"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="catalog">
+        <div class="container">
+          <nav class="nav">
+            <a href="index.html" class="nav__link"> Главная </a>
+            <a href="index.html" class="nav__link"> Каталог </a>
+          </nav>
+          <h2 class="catalog__title">Для тела</h2>
+
+          <div class="catalog__wrapper">
+            <div class="catalog__filter">
+              <div class="catalog__filter-nav">
+                <div class="catalog__filter-cats">
+                  <button type="button" class="catalog__filter-btn">Все</button>
+                  <button
+                    data-href="#catalogFilterCnt1"
+                    type="button"
+                    class="catalog__filter-btn catalog__filter-btn-menu"
+                  >
+                    Для тела
+                  </button>
+                  <button
+                    data-href="#catalogFilterCnt2"
+                    type="button"
+                    class="catalog__filter-btn catalog__filter-btn-menu"
+                  >
+                    Для лица
+                  </button>
+                  <button
+                    data-href="#catalogFilterCnt3"
+                    type="button"
+                    class="catalog__filter-btn catalog__filter-btn-menu"
+                  >
+                    Для волос
+                  </button>
+                </div>
+                <div class="catalog__filter-view">
+                  <button
+                    type="button"
+                    class="catalog__filter-view-btn-column"
+                  ></button>
+                  <button
+                    type="button"
+                    class="catalog__filter-view-btn-row"
+                  ></button>
+
+                  <div class="catalog__filter-view-select">
+                    <div class="popular__item-select" data-state="">
+                      <div class="popular__item-select-default" data-default="">
+                        Сначала дорогие
+                      </div>
+                      <div class="popular__item-select-content">
+                        <input
+                          id="viewSelect1"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="viewSelect"
+                          checked
+                        />
+                        <label
+                          for="viewSelect1"
+                          class="popular__item-select-label"
+                          >Сначала дорогие</label
+                        >
+                        <input
+                          id="viewSelect2"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="viewSelect"
+                          data-price=""
+                        />
+                        <label
+                          for="viewSelect2"
+                          class="popular__item-select-label"
+                          >Сначала дешевые</label
+                        >
+
+                        <input
+                          id="viewSelect3"
+                          class="popular__item-select-input"
+                          type="radio"
+                          name="viewSelect"
+                          data-price=""
+                        />
+                        <label
+                          for="viewSelect3"
+                          class="popular__item-select-label"
+                          >Популярное</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__filter-cats-content">
+                <div id="catalogFilterCnt1" class="catalog__filter-content">
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Цена</h4>
+                    <div class="catalog__filter-content-input">
+                      <span>от</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                    <div class="catalog__filter-content-input">
+                      <span>до</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Для чего</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для рук</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для интимной зоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для ног</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для душа</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для тела</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Основа</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">водная</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">масло</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Увлажнение и питание
+                    </h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">лосьоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">молочко</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">крем</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">бальзам</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Пилинги и скрабы
+                    </h4>
+                    <h4 class="catalog__filter-content-title">
+                      Для бани и сауны
+                    </h4>
+                  </div>
+                </div>
+                <div id="catalogFilterCnt2" class="catalog__filter-content">
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Цена</h4>
+                    <div class="catalog__filter-content-input">
+                      <span>от</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                    <div class="catalog__filter-content-input">
+                      <span>до</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Для чего</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для рук</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для интимной зоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для ног</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для душа</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для тела</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Основа</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">водная</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">масло</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Увлажнение и питание
+                    </h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">лосьоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">молочко</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">крем</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">бальзам</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Пилинги и скрабы
+                    </h4>
+                    <h4 class="catalog__filter-content-title">
+                      Для бани и сауны
+                    </h4>
+                  </div>
+                </div>
+                <div id="catalogFilterCnt3" class="catalog__filter-content">
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Цена</h4>
+                    <div class="catalog__filter-content-input">
+                      <span>от</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                    <div class="catalog__filter-content-input">
+                      <span>до</span>
+                      <input type="number" />
+                      <p>byn</p>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Для чего</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для рук</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для интимной зоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для ног</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для душа</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">для тела</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">Основа</h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">водная</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">масло</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Увлажнение и питание
+                    </h4>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">лосьоны</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">молочко</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">крем</span>
+                    </label>
+                    <label class="catalog__filter-content-check">
+                      <input type="checkbox" />
+                      <span for="">бальзам</span>
+                    </label>
+                  </div>
+                  <div class="catalog__filter-content-col">
+                    <h4 class="catalog__filter-content-title">
+                      Пилинги и скрабы
+                    </h4>
+                    <h4 class="catalog__filter-content-title">
+                      Для бани и сауны
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__items">
+              <div class="popular__item popular__item--item-1">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/1.png" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">
+                        Сухая пенка для умывания
+                      </div>
+
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          100 г
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem1"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem"
+                            checked
+                          />
+                          <label
+                            for="popularItem1"
+                            class="popular__item-select-label"
+                            >100 г</label
+                          >
+                          <input
+                            id="popularItem2"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem2"
+                            class="popular__item-select-label"
+                            >200 г</label
+                          >
+
+                          <input
+                            id="popularItem3"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem3"
+                            class="popular__item-select-label"
+                            >300 г</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: белый каолин, фруктовая пудра, пудра шиповника,
+                        мягкий ПАВ на основе кокосового масла (рН 6, идеален для
+                        кожи), масло косточек абрикоса
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">18 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-2">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/2.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Гидролат Таволги</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          50 мл
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem4"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem2"
+                            checked
+                          />
+                          <label
+                            for="popularItem4"
+                            class="popular__item-select-label"
+                            >50 мл</label
+                          >
+                          <input
+                            id="popularItem5"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem2"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem5"
+                            class="popular__item-select-label"
+                            >100 мл</label
+                          >
+
+                          <input
+                            id="popularItem6"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem2"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem6"
+                            class="popular__item-select-label"
+                            >150 мл</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: мягкий ПАВ на основе кокосового масла (рН 6,
+                        идеален для кожи), бетаин, протеины пшеницы, депантенол,
+                        композиция эфирных масел
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">15 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-3">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/3.png" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Твердый шампунь</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          80 г
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem7"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem3"
+                            checked
+                          />
+                          <label
+                            for="popularItem7"
+                            class="popular__item-select-label"
+                            >80 г</label
+                          >
+                          <input
+                            id="popularItem8"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem3"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem8"
+                            class="popular__item-select-label"
+                            >100 г</label
+                          >
+
+                          <input
+                            id="popularItem9"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem3"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem9"
+                            class="popular__item-select-label"
+                            >150 г</label
+                          >
+                          <input
+                            id="popularItem10"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem3"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem10"
+                            class="popular__item-select-label"
+                            >200 г</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: омыленные масла оливы, кокоса или натриевые соли
+                        натуральных жирных кислот (olivate натрия, кокоат
+                        натрия)
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">19 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-8">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/8.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Твердый шампунь</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          80 г
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem24"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem8"
+                            checked
+                          />
+                          <label
+                            for="popularItem24"
+                            class="popular__item-select-label"
+                            >80 г</label
+                          >
+                          <input
+                            id="popularItem25"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem8"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem25"
+                            class="popular__item-select-label"
+                            >100 г</label
+                          >
+
+                          <input
+                            id="popularItem26"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem8"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem26"
+                            class="popular__item-select-label"
+                            >150 г</label
+                          >
+                          <input
+                            id="popularItem27"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem8"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem27"
+                            class="popular__item-select-label"
+                            >200 г</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: омыленные масла оливы, кокоса или натриевые соли
+                        натуральных жирных кислот (olivate натрия, кокоат
+                        натрия)
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">19 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-9">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/9.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Гидролат Таволги</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          50 мл
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem28"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem9"
+                            checked
+                          />
+                          <label
+                            for="popularItem28"
+                            class="popular__item-select-label"
+                            >50 мл</label
+                          >
+                          <input
+                            id="popularItem29"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem9"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem29"
+                            class="popular__item-select-label"
+                            >100 мл</label
+                          >
+
+                          <input
+                            id="popularItem30"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem9"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem30"
+                            class="popular__item-select-label"
+                            >150 мл</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: мягкий ПАВ на основе кокосового масла (рН 6,
+                        идеален для кожи), бетаин, протеины пшеницы, депантенол,
+                        композиция эфирных масел
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">15 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-10">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/10.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">
+                        Сухая пенка для умывания
+                      </div>
+
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          100 г
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem31"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem10"
+                            checked
+                          />
+                          <label
+                            for="popularItem31"
+                            class="popular__item-select-label"
+                            >100 г</label
+                          >
+                          <input
+                            id="popularItem32"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem10"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem32"
+                            class="popular__item-select-label"
+                            >200 г</label
+                          >
+
+                          <input
+                            id="popularItem33"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem10"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem33"
+                            class="popular__item-select-label"
+                            >300 г</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: мягкий ПАВ на основе кокосового масла (рН 6,
+                        идеален для кожи), бетаин, протеины пшеницы, депантенол,
+                        композиция эфирных масел
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">18 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular__item popular__item--item-4">
+                <div class="popular__item-wrapper">
+                  <a href="card.html" class="popular__item-img">
+                    <img src="./img/popular/4.jpg" alt="" />
+                  </a>
+                  <div class="popular__item-info">
+                    <div class="popular__item-row">
+                      <div class="popular__item-name">Пенка для умывания</div>
+                      <div class="popular__item-select" data-state="">
+                        <div
+                          class="popular__item-select-default"
+                          data-default=""
+                        >
+                          80 мл
+                        </div>
+                        <div class="popular__item-select-content">
+                          <input
+                            id="popularItem11"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem4"
+                            checked
+                          />
+                          <label
+                            for="popularItem11"
+                            class="popular__item-select-label"
+                            >80 мл</label
+                          >
+                          <input
+                            id="popularItem12"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem4"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem12"
+                            class="popular__item-select-label"
+                            >100 мл</label
+                          >
+
+                          <input
+                            id="popularItem13"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem4"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem13"
+                            class="popular__item-select-label"
+                            >150 мл</label
+                          >
+                          <input
+                            id="popularItem14"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem4"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem14"
+                            class="popular__item-select-label"
+                            >200 мл</label
+                          >
+                          <input
+                            id="popularItem15"
+                            class="popular__item-select-input"
+                            type="radio"
+                            name="popularItem4"
+                            data-price=""
+                          />
+                          <label
+                            for="popularItem15"
+                            class="popular__item-select-label"
+                            >250 мл</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__item-row">
+                      <p class="popular__item-desc">
+                        Состав: белый каолин, фруктовая пудра, пудра шиповника,
+                        мягкий ПАВ на основе кокосового масла (рН 6, идеален для
+                        кожи), масло косточек абрикоса
+                      </p>
+                    </div>
+                    <div class="popular__item-row">
+                      <div class="popular__item-infoprices">
+                        <div class="popular__item-price">20 byn</div>
+                        <button
+                          type="button"
+                          class="popular__item-btn"
+                        ></button>
+                      </div>
+
+                      <button type="button" class="popular__item-wish"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__item popular__item--item-5">
+                <span class="popular__item-text">Выгодно!</span>
+                <div class="popular__item-inner">
+                  <div class="popular__item-wrapper popular__item--item-6">
+                    <a href="card.html" class="popular__item-img">
+                      <img src="./img/popular/5.jpg" alt="" />
+                    </a>
+                    <div class="popular__item-info">
+                      <div class="popular__item-row">
+                        <div class="popular__item-name">
+                          Убтан (для умывания)
+                        </div>
+                        <div class="popular__item-select" data-state="">
+                          <div
+                            class="popular__item-select-default"
+                            data-default=""
+                          >
+                            80 мл
+                          </div>
+                          <div class="popular__item-select-content">
+                            <input
+                              id="popularItem16"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem5"
+                              checked
+                            />
+                            <label
+                              for="popularItem16"
+                              class="popular__item-select-label"
+                              >80 мл</label
+                            >
+                            <input
+                              id="popularItem17"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem5"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem17"
+                              class="popular__item-select-label"
+                              >100 мл</label
+                            >
+
+                            <input
+                              id="popularItem18"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem5"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem18"
+                              class="popular__item-select-label"
+                              >150 мл</label
+                            >
+                            <input
+                              id="popularItem19"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem5"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem19"
+                              class="popular__item-select-label"
+                              >200 мл</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular__item-row">
+                        <p class="popular__item-desc">
+                          Состав: белый каолин, фруктовая пудра, пудра
+                          шиповника, мягкий ПАВ на основе кокосового масла (рН
+                          6, идеален для кожи), масло косточек абрикоса
+                        </p>
+                      </div>
+                      <div class="popular__item-row">
+                        <div class="popular__item-infoprices">
+                          <div class="popular__item-price">15 byn</div>
+                          <button
+                            type="button"
+                            class="popular__item-btn"
+                          ></button>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="popular__item-wish"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__item-wrapper popular__item--item-7">
+                    <a href="card.html" class="popular__item-img">
+                      <img src="./img/popular/6.jpg" alt="" />
+                    </a>
+                    <div class="popular__item-info">
+                      <div class="popular__item-row">
+                        <div class="popular__item-name">Тоник Belle skin</div>
+                        <div class="popular__item-select" data-state="">
+                          <div
+                            class="popular__item-select-default"
+                            data-default=""
+                          >
+                            80 мл
+                          </div>
+                          <div class="popular__item-select-content">
+                            <input
+                              id="popularItem20"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem6"
+                              checked
+                            />
+                            <label
+                              for="popularItem20"
+                              class="popular__item-select-label"
+                              >80 мл</label
+                            >
+                            <input
+                              id="popularItem21"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem6"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem21"
+                              class="popular__item-select-label"
+                              >100 мл</label
+                            >
+
+                            <input
+                              id="popularItem22"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem6"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem22"
+                              class="popular__item-select-label"
+                              >150 мл</label
+                            >
+                            <input
+                              id="popularItem23"
+                              class="popular__item-select-input"
+                              type="radio"
+                              name="popularItem6"
+                              data-price=""
+                            />
+                            <label
+                              for="popularItem23"
+                              class="popular__item-select-label"
+                              >200 мл</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular__item-row">
+                        <div class="popular__item-infoprices">
+                          <div class="popular__item-price">11 byn</div>
+                          <button
+                            type="button"
+                            class="popular__item-btn"
+                          ></button>
+                        </div>
+
+                        <button
+                          type="button"
+                          class="popular__item-wish"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__btn">
+              <button type="button" class="catalog__btn-more">
+                Показать еще
+              </button>
+            </div>
+            <div class="catalog__info">
+              <h3 class="catalog__info-title">
+                <span class="catalog__info-title-nostroke"
+                  >Купить средства по уходу за телом</span
+                >
+                <span class="catalog__info-title-stroke">
+                  Купить средства по уходу за телом
+                </span>
+              </h3>
+              <p class="catalog__info-text">
+                Избавиться от усталости в теле, увлажнить кожу и сохранить ее
+                привлекательность поможет качественная, натуральная уходовая
+                косметика. Купить средство по уходу за телом вы можете в нашем
+                интернет магазине или связаться с нами через инстаграмм.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="footer__left-inner">
+                <div class="footer__title">
+                  <h2 class="footer__title-text">
+                    <span class="footer__title-text-nostroke">ZINAVA</span>
+                    <span class="footer__title-text-stroke">ZINAVA</span>
+                  </h2>
+                  <a href="" class="footer__instagramm">
+                    <img src="./img/footer/instagram.svg" alt="" />
+                  </a>
+                </div>
+                <div class="footer__links">
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">О нас</h3>
+                    <a href="index.html#blog" class="footer__link">О бренде </a>
+                    <a href="contacts.html" class="footer__link"
+                      >Вопрос-ответ</a
+                    >
+                    <a href="contacts.html" class="footer__link">Контакты</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Каталог</h3>
+                    <a href="catalog.html" class="footer__link">Для лица </a>
+                    <a href="catalog.html" class="footer__link">Для волос</a>
+                    <a href="catalog.html" class="footer__link">Для тела</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Покупателю</h3>
+                    <a href="cart.html" class="footer__link"
+                      >Способы доставки</a
+                    >
+                    <a href="index.html#blog" class="footer__link">Блог</a>
+                    <a href="cart.html" class="footer__link">Обмен и возврат</a>
+                  </div>
+                  <div class="footer__item">
+                    <h3 class="footer__item-title">Связь</h3>
+                    <a href="" class="footer__link">+37529 284-89-56 </a>
+                    <a href="" class="footer__link">zivana.bel@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__right-img">
+                <img src="./img/footer/1.jpg" alt="" />
+              </div>
+              <div class="footer__right-text">
+                <h4 class="footer__right-title">
+                  <span class="footer__right-text-nostroke">
+                    Узнавай про акции первой
+                  </span>
+                  <span class="footer__right-text-stroke">
+                    Узнавай про акции первой
+                  </span>
+                </h4>
+                <form class="footer__right-form">
+                  <input
+                    placeholder="введите почту"
+                    type="text"
+                    class="footer__right-input"
+                  />
+                  <button type="submit" class="footer__right-btn">
+                    <span class="footer__right-btn-item"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/headerLinks.js"></script>
+  <script src="./js/userModal.js"></script>
+  <script src="./js/filterTabs.js"></script>
+  <script src="./js/popularItemsSelects.js"></script>
+  <script src="./js/catalogViewSwitch.js"></script>
+  <script src="./js/AddMoreProducts.js"></script>
+  <script src="./js/app.js"></script>
+</html>

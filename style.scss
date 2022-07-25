@@ -1,0 +1,100 @@
+body {
+   margin: 0;
+
+   font-family: "Raleway", sans-serif;
+   // font-family: "Poiret One", cursive;
+
+   box-sizing: border-box;
+
+   font-variant-numeric: lining-nums;
+   font-feature-settings: "lnum";
+   -moz-font-feature-settings: "lnum=1";
+   -ms-font-feature-settings: "lnum";
+   -webkit-font-feature-settings: "lnum";
+   -o-font-feature-settings: "lnum";
+
+   &.activemodalbody {
+      // overflow: hidden;
+      position: relative;
+      z-index: 600;
+      height: 100vh;
+   }
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+p {
+   margin: 0;
+}
+
+.container {
+   max-width: 1250px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+button {
+   background: none;
+   padding: 0;
+   border: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+input {
+   border: 0;
+   padding: 0;
+   background: none;
+   &:focus {
+      outline: none;
+   }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+   appearance: none;
+   -moz-appearance: textfield;
+}
+
+@import "blocks/vars";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/preview";
+@import "blocks/popular";
+@import "blocks/stock";
+@import "blocks/blog";
+@import "blocks/footer";
+@import "blocks/catalog";
+@import "blocks/card";
+@import "blocks/recomendation";
+@import "blocks/cart";
+@import "blocks/contacts";
+@import "blocks/modal";
+
+
