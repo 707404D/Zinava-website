@@ -1,4 +1,4 @@
-# Zinava-website
+# Zivana-website
 Верстка интернет-магазина косметики Zinava 
 
 - HTML, SCSS, JS
